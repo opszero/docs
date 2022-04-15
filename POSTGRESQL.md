@@ -1,0 +1,13 @@
+
+
+# How do I Create a Read-only User
+
+```
+CREATE USER newuser123 WITH PASSWORD 'foobar123';
+# ALTER USER newuser123 WITH SUPERUSER; #Uncomment for superuser
+
+GRANT CONNECT ON DATABASE database_name TO newuser123;
+GRANT SELECT ON ALL TABLES IN SCHEMA public TO newuser123;
+GRANT SELECT ON ALL SEQUENCES IN SCHEMA public TO newuser123;
+ALTER DEFAULT PRIVILEGES IN SCHEMA public GRANT SELECT ON TABLES TO newuser123;
+```
