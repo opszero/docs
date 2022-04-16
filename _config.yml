@@ -1,5 +1,6 @@
 title: Docs
 author: opsZero, LLC
+copyright: "2021-2022"
 logo: logo.png
 execute:
   execute_notebooks: force
@@ -12,3 +13,5 @@ repository:
 html:
   use_issues_button: true
   use_repository_button: true
+  use_edit_page_button: true
+  extra_navbar: Go to <a href="https://www.opsZero.com">opsZero</a>

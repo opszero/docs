@@ -4,6 +4,10 @@
 format: jb-book
 root: intro
 chapters:
+- file: MONITORING
+- file: KUBERNETES
+- file: HELM
+- file: CICD
 - file: CODING
 - file: POSTGRESQL
 - file: LINUX
