@@ -10,7 +10,7 @@ parts:
   - file: infra-as-code/terraform
 - caption: Cloud
   chapters:
-  - file: cloud
+  - file: cloud/aws
 - caption: Monitoring
   chapters:
   - file: monitoring/datadog
