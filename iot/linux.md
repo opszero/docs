@@ -1,4 +1,6 @@
-# How do I tune my machines for performance?
+# Linux
+
+## Performance Tuning
 
 Set the following in sysctl.conf
 

@@ -3,13 +3,36 @@
 
 format: jb-book
 root: intro
-chapters:
-- file: TERRAFORM
-- file: cloud
-- file: MONITORING
-- file: kubernetes
-- file: HELM
-- file: CICD
-- file: CODING
-- file: POSTGRESQL
-- file: LINUX
+parts:
+- caption: Infrastructure as Code
+  chapters:
+  - file: infra-as-code/git
+  - file: infra-as-code/terraform
+- caption: Cloud
+  chapters:
+  - file: cloud
+- caption: Monitoring
+  chapters:
+  - file: monitoring/datadog
+- caption: Kubernetes
+  chapters:
+  - file: kubernetes
+  - file: HELM
+# - caption: Serverless
+#   chapters:
+#   - file: cloud
+- caption: CI / CD
+  chapters:
+  - file: cicd/github-actions
+# - caption: DNS, CDN & Security
+#   chapters:
+#   - file: cloud
+- caption: Databases
+  chapters:
+  - file: databases/postgresql
+# - caption: AI
+#   chapters:
+#   - file: cloud
+- caption: IoT & Bare Metal
+  chapters:
+  - file: iot/linux

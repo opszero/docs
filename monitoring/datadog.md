@@ -1,4 +1,4 @@
-# Monitoring
+# Datadog
 
 Monitoring is configured through third party services such as Datadog, New
 Relic, etc. These services will cover what the issues with the pods are and

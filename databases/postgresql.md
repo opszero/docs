@@ -1,6 +1,6 @@
+# PostgreSQL
 
-
-# How do I Create a Read-only User
+## How do I Create a Read-only User
 
 ```
 CREATE USER newuser123 WITH PASSWORD 'foobar123';
