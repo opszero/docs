@@ -33,6 +33,9 @@ parts:
   chapters:
   - file: serverless/aws-lambda
   - file: serverless/cloudflare
+# - caption: Secrets
+#   chapters:
+#   - file: c
 - caption: CI / CD
   chapters:
   - file: cicd/github-actions
