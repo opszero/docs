@@ -1,9 +1,5 @@
 # Terraform
 
- - [AWS EKS](examples/eks)
- - [Google Cloud](examples/gcp)
- - Microsoft Azure
-
 The infrastructure is setup using Kubespot which is a Terraform module to
 create the entire infrastructure. Terraform is used to create Infrastructure as
 Code so you don’t have to go into the Consoles of the different environments and
