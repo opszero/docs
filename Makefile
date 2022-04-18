@@ -5,3 +5,6 @@ build: download
 
 download:
 	gh api /repos/opszero/template-infra/contents/README.md | jq -r '.content' | base64 -d > infra-as-code/template.md
+
+requirements:
+	pip3 install -r ./requirements.txt

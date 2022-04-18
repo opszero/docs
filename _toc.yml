@@ -10,24 +10,23 @@ parts:
   - file: infra-as-code/terraform
 - caption: Cloud
   chapters:
-  - file: cloud/aws
-  - file: cloud/google
-  - file: cloud/azure
+    - file: cloud/aws
+    - file: cloud/google
+    - file: cloud/azure
 - caption: Monitoring
   chapters:
   - file: monitoring/datadog
 - caption: Kubernetes
   chapters:
   - file: kubernetes/auth
-  - file: kubernetes/common-helm
   - file: kubernetes/ingress
   - file: kubernetes/services
   - file: kubernetes/deployments
   - file: kubernetes/pods
-  - file: kubernetes/hpa
   - file: kubernetes/nodes
 - caption: Helm
   chapters:
+  - file: kubernetes/common-helm
   - file: HELM
 - caption: Serverless
   chapters:
