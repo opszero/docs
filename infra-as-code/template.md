@@ -1,4 +1,4 @@
-# Git
+# Infra Template
 
 We have the structure of the infrastructure repositories consistent. This will
 make life easier for everyone.

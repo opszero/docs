@@ -6,26 +6,37 @@ root: intro
 parts:
 - caption: Infrastructure as Code
   chapters:
-  - file: infra-as-code/git
+  - file: infra-as-code/template
   - file: infra-as-code/terraform
 - caption: Cloud
   chapters:
   - file: cloud/aws
+  - file: cloud/google
+  - file: cloud/azure
 - caption: Monitoring
   chapters:
   - file: monitoring/datadog
 - caption: Kubernetes
   chapters:
-  - file: kubernetes
+  - file: kubernetes/auth
+  - file: kubernetes/common-helm
+  - file: kubernetes/ingress
+  - file: kubernetes/services
+  - file: kubernetes/deployments
+  - file: kubernetes/pods
+  - file: kubernetes/hpa
+  - file: kubernetes/nodes
 - caption: Helm
   chapters:
   - file: HELM
 - caption: Serverless
   chapters:
   - file: serverless/aws-lambda
+  - file: serverless/cloudflare
 - caption: CI / CD
   chapters:
   - file: cicd/github-actions
+  - file: cicd/gitlab
 - caption: "Edge (DNS, CDN & Security)"
   chapters:
   - file: edge/cloudflare
