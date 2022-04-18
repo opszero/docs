@@ -17,16 +17,18 @@ parts:
 - caption: Kubernetes
   chapters:
   - file: kubernetes
+- caption: Helm
+  chapters:
   - file: HELM
-# - caption: Serverless
-#   chapters:
-#   - file: cloud
+- caption: Serverless
+  chapters:
+  - file: serverless/aws-lambda
 - caption: CI / CD
   chapters:
   - file: cicd/github-actions
-# - caption: DNS, CDN & Security
-#   chapters:
-#   - file: cloud
+- caption: "Edge (DNS, CDN & Security)"
+  chapters:
+  - file: edge/cloudflare
 - caption: Databases
   chapters:
   - file: databases/postgresql
