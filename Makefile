@@ -5,6 +5,7 @@ build: download
 
 download:
 	gh api /repos/opszero/template-infra/contents/README.md | jq -r '.content' | base64 -d > infra-as-code/template.md
+	gh api /repos/opszero/terraform-helm-kubespot/contents/README.md | jq -r '.content' | base64 -d | sed "s|# opsZero Kubespot (Helm)|# Common|" > helm/common.md
 
 requirements:
 	pip3 install -r ./requirements.txt
