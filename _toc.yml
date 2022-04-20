@@ -6,10 +6,15 @@ root: intro
 parts:
 - caption: Infrastructure as Code
   chapters:
-  - file: infra-as-code/template
+  - file: infra-as-code/setup
+    sections:
+      - file: infra-as-code/template-infra
   - file: infra-as-code/terraform
 - caption: Cloud
   chapters:
+    - file: cloud/setup
+      sections:
+        - file: cloud/terraform-aws-mrmgr.md
     - file: cloud/aws
     - file: cloud/google
     - file: cloud/azure
@@ -18,6 +23,12 @@ parts:
   - file: monitoring/datadog
 - caption: Kubernetes
   chapters:
+  - file: kubernetes/setup
+    sections:
+      - file: kubernetes/terraform-aws-kubespot.md
+      - file: kubernetes/terraform-google-kubespot
+      - file: kubernetes/terraform-azurerm-kubespot
+      - file: kubernetes/terraform-helm-kubespot.md
   - file: kubernetes/auth
   - file: kubernetes/ingress
   - file: kubernetes/services
@@ -26,7 +37,6 @@ parts:
   - file: kubernetes/nodes
 - caption: Helm
   chapters:
-  - file: helm/common
   - file: HELM
 - caption: Serverless
   chapters:
