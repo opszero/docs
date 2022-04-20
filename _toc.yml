@@ -12,6 +12,7 @@ parts:
   - file: infra-as-code/terraform
 - caption: Cloud
   chapters:
+    - file: cloud/intro
     - file: cloud/setup
       sections:
         - file: cloud/terraform-aws-mrmgr.md
@@ -37,14 +38,25 @@ parts:
   - file: kubernetes/nodes
 - caption: Helm
   chapters:
-  - file: HELM
+  - file: helm/intro
+  - file: helm/setup
+    sections:
+      - file: helm/template-helm-rails
+      - file: helm/template-helm-django
 - caption: Serverless
   chapters:
   - file: serverless/aws-lambda
+    sections:
+      - file: helm/template-aws-lambda-python
+      - file: helm/template-aws-lambda-go
+      - file: helm/template-aws-lambda-rust
   - file: serverless/cloudflare
-# - caption: Secrets
-#   chapters:
-#   - file: c
+- caption: Secrets
+  chapters:
+  - file: secrets/github-secrets
+  - file: secrets/aws-ssm
+  - file: secrets/aws-secretsmanager
+  - file: secrets/vault
 - caption: CI / CD
   chapters:
   - file: cicd/github-actions
@@ -55,9 +67,9 @@ parts:
 - caption: Databases
   chapters:
   - file: databases/postgresql
-# - caption: AI
-#   chapters:
-#   - file: cloud
+- caption: AI
+  chapters:
+  - file: ai/kubernetes
 - caption: IoT & Bare Metal
   chapters:
   - file: iot/linux
