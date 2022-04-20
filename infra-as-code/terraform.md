@@ -61,3 +61,11 @@ Additional Control Log Flows
 Node level Encryption
 Google Cloud
 Azure
+
+## Modules
+
+Modules that we have tested.
+
+### AWS
+
+ - [S3](https://registry.terraform.io/modules/terraform-aws-modules/s3-bucket)
