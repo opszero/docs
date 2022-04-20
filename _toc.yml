@@ -19,9 +19,6 @@ parts:
     - file: cloud/aws
     - file: cloud/google
     - file: cloud/azure
-- caption: Monitoring
-  chapters:
-  - file: monitoring/datadog
 - caption: Kubernetes
   chapters:
   - file: kubernetes/setup
@@ -67,6 +64,9 @@ parts:
 - caption: Databases
   chapters:
   - file: databases/postgresql
+- caption: Monitoring
+  chapters:
+  - file: monitoring/datadog
 - caption: AI
   chapters:
   - file: ai/kubernetes
