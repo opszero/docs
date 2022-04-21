@@ -12,7 +12,6 @@ parts:
   - file: infra-as-code/terraform
 - caption: Cloud
   chapters:
-    - file: cloud/intro
     - file: cloud/setup
       sections:
         - file: cloud/terraform-aws-mrmgr.md
@@ -32,28 +31,25 @@ parts:
   - file: kubernetes/services
   - file: kubernetes/deployments
   - file: kubernetes/pods
-  - file: kubernetes/nodes
-- caption: Helm
-  chapters:
-  - file: helm/intro
-  - file: helm/setup
+  - file: secrets/intro
     sections:
-      - file: helm/template-helm-rails
-      - file: helm/template-helm-django
+      - file: secrets/github-secrets
+      - file: secrets/aws-ssm
+      - file: secrets/aws-secretsmanager
+      - file: secrets/vault
+  - file: kubernetes/nodes
+  - file: helm/intro
+    # sections:
+    #   - file: helm/template-helm-rails
+    #   - file: helm/template-helm-django
 - caption: Serverless
   chapters:
   - file: serverless/aws-lambda
-    sections:
-      - file: helm/template-aws-lambda-python
-      - file: helm/template-aws-lambda-go
-      - file: helm/template-aws-lambda-rust
+    # sections:
+    #   - file: helm/template-aws-lambda-python
+    #   - file: helm/template-aws-lambda-go
+    #   - file: helm/template-aws-lambda-rust
   - file: serverless/cloudflare
-- caption: Secrets
-  chapters:
-  - file: secrets/github-secrets
-  - file: secrets/aws-ssm
-  - file: secrets/aws-secretsmanager
-  - file: secrets/vault
 - caption: CI / CD
   chapters:
   - file: cicd/github-actions
@@ -63,11 +59,15 @@ parts:
   - file: edge/cloudflare
 - caption: Databases
   chapters:
+  - file: databases/mysql
   - file: databases/postgresql
+  - file: databases/mongodb
+  - file: databases/aws-dynamodb
+  - file: databases/elasticsearch
 - caption: Monitoring
   chapters:
   - file: monitoring/datadog
-- caption: AI
+- caption: "Data & AI"
   chapters:
   - file: ai/kubernetes
 - caption: IoT & Bare Metal
