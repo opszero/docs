@@ -6,9 +6,7 @@ root: intro
 parts:
 - caption: Infrastructure as Code
   chapters:
-  - file: infra-as-code/setup
-    sections:
-      - file: infra-as-code/template-infra
+  - file: infra-as-code/template-infra
   - file: infra-as-code/terraform
 - caption: Cloud
   chapters:
@@ -44,19 +42,24 @@ parts:
     #   - file: helm/template-helm-django
 - caption: Serverless
   chapters:
+  - file: serverless/fn
+    sections:
+      - file: serverless/template-aws-lambda-python
+      - file: serverless/template-aws-lambda-go
+#      - file: serverless/template-aws-lambda-rust
   - file: serverless/aws-lambda
-    # sections:
-    #   - file: helm/template-aws-lambda-python
-    #   - file: helm/template-aws-lambda-go
-    #   - file: helm/template-aws-lambda-rust
   - file: serverless/cloudflare
 - caption: CI / CD
   chapters:
+  - file: cicd/deploytag
   - file: cicd/github-actions
   - file: cicd/gitlab
 - caption: "Edge (DNS, CDN & Security)"
   chapters:
   - file: edge/cloudflare
+- caption: Monitoring
+  chapters:
+  - file: monitoring/datadog
 - caption: Databases
   chapters:
   - file: databases/mysql
@@ -64,9 +67,6 @@ parts:
   - file: databases/mongodb
   - file: databases/aws-dynamodb
   - file: databases/elasticsearch
-- caption: Monitoring
-  chapters:
-  - file: monitoring/datadog
 - caption: "Data & AI"
   chapters:
   - file: ai/kubernetes

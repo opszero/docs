@@ -10,6 +10,10 @@ download:
 	gh api /repos/opszero/terraform-aws-kubespot/contents/README.md | jq -r '.content' | base64 -d > kubernetes/terraform-aws-kubespot.md
 	gh api /repos/opszero/terraform-google-kubespot/contents/README.md | jq -r '.content' | base64 -d > kubernetes/terraform-google-kubespot.md
 	gh api /repos/opszero/terraform-azurerm-kubespot/contents/README.md | jq -r '.content' | base64 -d > kubernetes/terraform-azurerm-kubespot.md
+	gh api /repos/opszero/template-aws-lambda-python/contents/README.md | jq -r '.content' | base64 -d > serverless/template-aws-lambda-python.md
+	gh api /repos/opszero/template-aws-lambda-go/contents/README.md | jq -r '.content' | base64 -d > serverless/template-aws-lambda-go.md
+	gh api /repos/opszero/template-aws-lambda-rust/contents/README.md | jq -r '.content' | base64 -d > serverless/template-aws-lambda-rust.md
+	gh api /repos/opszero/deploytag/contents/README.md | jq -r '.content' | base64 -d > cicd/deploytag.md
 
 requirements:
 	pip3 install -r ./requirements.txt
