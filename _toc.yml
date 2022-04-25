@@ -72,23 +72,30 @@ parts:
   chapters:
   - file: iot/pi
   - file: iot/freertos
-- caption: SQL Databases
+- caption: Databases
   chapters:
-  - file: databases/mysql
-  - file: databases/postgresql
-- caption: NoSQL Databases
-  - file: databases/redis
-  - file: databases/mongodb
-  - file: databases/elasticsearch
-  - file: databases/aws-dynamodb
+  - file: databases/sql
+  sections:
+    - file: databases/mysql
+    - file: databases/postgresql
+  - file: databases/nosql
+  sections:
+    - file: databases/redis
+    - file: databases/mongodb
+    - file: databases/elasticsearch
+    - file: databases/aws-dynamodb
 - caption: ETL
   - file: etl/aws-glue
-- caption: Database Warehouse
+- caption: Data Warehouse
   - file: databases/redshift
   - file: databases/snowflake
 - caption: "Data Analysis & BI"
   - file: bi/looker
   - file: bi/tableau
+  - file: bi/metabase
 - caption: "Data Science & AI"
   chapters:
   - file: ai/kubernetes
+- caption: "Web3"
+  chapters:
+  - file: web3/intro
