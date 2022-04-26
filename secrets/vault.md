@@ -1,1 +1,1 @@
-# Vault
+# Hashicorp Vault
