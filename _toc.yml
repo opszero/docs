@@ -8,6 +8,9 @@ parts:
   chapters:
   - file: infra-as-code/template-infra
   - file: infra-as-code/terraform
+- caption: "Edge (DNS, CDN & Security)"
+  chapters:
+  - file: edge/cloudflare
 - caption: Cloud
   chapters:
     - file: cloud/setup
@@ -16,10 +19,16 @@ parts:
     - file: cloud/aws
     - file: cloud/google
     - file: cloud/azure
+- caption: Monitoring
+  chapters:
+  - file: monitoring/datadog
 - caption: Kubernetes
   chapters:
   - file: kubernetes/setup
     sections:
+      - file: metal/linux
+      - file: metal/mac
+      - file: metal/windows
       - file: kubernetes/terraform-aws-kubespot.md
       - file: kubernetes/terraform-google-kubespot
       - file: kubernetes/terraform-azurerm-kubespot
@@ -29,17 +38,12 @@ parts:
   - file: kubernetes/services
   - file: kubernetes/deployments
   - file: kubernetes/pods
-  - file: secrets/intro
-    sections:
-      - file: secrets/github-secrets
-      - file: secrets/aws-ssm
-      - file: secrets/aws-secretsmanager
-      - file: secrets/vault
   - file: kubernetes/nodes
   - file: helm/intro
     # sections:
     #   - file: helm/template-helm-rails
     #   - file: helm/template-helm-django
+- caption: Full-Stack
 - caption: Serverless
   chapters:
   - file: serverless/fn
@@ -50,52 +54,41 @@ parts:
   - file: serverless/aws-lambda
   - file: serverless/aws-step-functions
   - file: serverless/cloudflare
+- caption: "Web3"
+  chapters:
+  - file: web3/intro
+- caption: Secrets
+  chapters:
+  - file: secrets/intro
+    sections:
+      - file: secrets/github-secrets
+      - file: secrets/aws-ssm
+      - file: secrets/aws-secretsmanager
+      - file: secrets/vault
 - caption: CI / CD
   chapters:
   - file: cicd/deploytag
   - file: cicd/github-actions
   - file: cicd/gitlab
-- caption: "Edge (DNS, CDN & Security)"
-  chapters:
-  - file: edge/edge
-  - file: edge/cloudflare
-- caption: Monitoring
-  chapters:
-  - file: monitoring/panopticon
-  - file: monitoring/datadog
-- caption: Bare Metal
-  chapters:
-  - file: metal/linux
-  - file: metal/mac
-  - file: metal/windows
-- caption: IoT
-  chapters:
-  - file: iot/pi
-  - file: iot/freertos
 - caption: Databases
   chapters:
-  - file: databases/sql
-  sections:
-    - file: databases/mysql
-    - file: databases/postgresql
-  - file: databases/nosql
-  sections:
-    - file: databases/redis
-    - file: databases/mongodb
-    - file: databases/elasticsearch
-    - file: databases/aws-dynamodb
+  - file: databases/mysql
+  - file: databases/postgresql
+  - file: databases/redis
+  - file: databases/mongodb
+  - file: databases/elasticsearch
+  - file: databases/aws-dynamodb
 - caption: ETL
+  chapters:
   - file: etl/aws-glue
 - caption: Data Warehouse
+  chapters:
   - file: databases/redshift
-  - file: databases/snowflake
 - caption: "Data Analysis & BI"
+  chapters:
   - file: bi/looker
   - file: bi/tableau
   - file: bi/metabase
 - caption: "Data Science & AI"
   chapters:
   - file: ai/kubernetes
-- caption: "Web3"
-  chapters:
-  - file: web3/intro
