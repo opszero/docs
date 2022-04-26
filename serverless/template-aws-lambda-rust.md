@@ -1,4 +1,4 @@
-# serverless AWS Rust HTTP template
+# AWS Lambda (Rust)
 
 A sample template for bootstraping [Rustlang AWS Lambda](https://github.com/awslabs/aws-lambda-rust-runtime/) HTTP applications with ⚡ serverless framework ⚡.
 

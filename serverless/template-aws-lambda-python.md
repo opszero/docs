@@ -1,4 +1,4 @@
-# <name>
+# AWS Lambda (Python)
 
 # Handlers
 
