@@ -27,6 +27,9 @@ parts:
   - file: monitoring/datadog
 - caption: "Compliance"
   chapters:
+  - file: compliance/bastion
+    sections:
+    - file: compliance/terraform-aws-bastion
   - file: compliance/alarms
     sections:
     - file: compliance/terraform-aws-elb-cloudwatch
@@ -47,10 +50,14 @@ parts:
   - file: kubernetes/pods
   - file: kubernetes/nodes
   - file: helm/intro
-    # sections:
-    #   - file: helm/template-helm-rails
-    #   - file: helm/template-helm-django
-# #- caption: Full-Stack
+- caption: Full-Stack
+  chapters:
+  - file: fullstack/rubyonrails
+    sections:
+      - file: fullstack/template-helm-rails
+  - file: fullstack/django
+    sections:
+      - file: fullstack/template-helm-django
 - caption: Serverless
   chapters:
   - file: serverless/template-aws-lambda-python
