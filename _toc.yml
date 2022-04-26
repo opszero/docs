@@ -25,9 +25,11 @@ parts:
 - caption: "Monitoring"
   chapters:
   - file: monitoring/datadog
-# - caption: "Compliance"
-#   chapters:
-#   - file: monitoring/datadog
+- caption: "Compliance"
+  chapters:
+  - file: compliance/alarms
+    sections:
+    - file: compliance/terraform-aws-elb-cloudwatch
 - caption: Kubernetes
   chapters:
   - file: kubernetes/terraform-aws-kubespot
@@ -67,8 +69,9 @@ parts:
   - file: secrets/vault
 - caption: CI / CD
   chapters:
-  - file: cicd/deploytag
   - file: cicd/github-actions
+    sections:
+    - file: cicd/deploytag
   - file: cicd/gitlab
 - caption: Databases
   chapters:

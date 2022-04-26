@@ -22,6 +22,7 @@ download:
 	gh api /repos/opszero/template-aws-lambda-go/contents/README.md | jq -r '.content' | base64 -d > serverless/template-aws-lambda-go.md
 	gh api /repos/opszero/template-aws-lambda-rust/contents/README.md | jq -r '.content' | base64 -d > serverless/template-aws-lambda-rust.md
 	gh api /repos/opszero/deploytag/contents/README.md | jq -r '.content' | base64 -d > cicd/deploytag.md
+	gh api /repos/opszero/terraform-aws-elb-cloudwatch/contents/README.md | jq -r '.content' | base64 -d > compliance/terraform-aws-elb-cloudwatch.md
 
 requirements:
 	pip3 install -r ./requirements.txt
