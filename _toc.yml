@@ -7,7 +7,6 @@ parts:
 - caption: Developers
   chapters:
   - file: developers/git
-    title: "git"
 - caption: Infrastructure as Code
   chapters:
   - file: infra-as-code/template-infra
