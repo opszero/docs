@@ -53,6 +53,18 @@ parts:
   - file: kubernetes/pods
   - file: kubernetes/nodes
   - file: helm/intro
+  - file: kubernetes/cicd
+    sections:
+      - file: cicd/github-actions
+        sections:
+          - file: cicd/deploytag
+      - file: cicd/gitlab
+- caption: Secrets
+  chapters:
+  - file: secrets/github-secrets
+  - file: secrets/aws-ssm
+  - file: secrets/aws-secretsmanager
+  - file: secrets/vault
 - caption: Full-Stack
   chapters:
   - file: fullstack/rubyonrails
@@ -71,18 +83,6 @@ parts:
 # - caption: Web3
 #   chapters:
 #   - file: web3/intro
-- caption: Secrets
-  chapters:
-  - file: secrets/github-secrets
-  - file: secrets/aws-ssm
-  - file: secrets/aws-secretsmanager
-  - file: secrets/vault
-- caption: CI / CD
-  chapters:
-  - file: cicd/github-actions
-    sections:
-    - file: cicd/deploytag
-  - file: cicd/gitlab
 - caption: Databases
   chapters:
   - file: databases/mysql
