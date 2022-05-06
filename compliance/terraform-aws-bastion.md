@@ -1,23 +1,13 @@
 <!-- BEGIN_TF_DOCS -->
-## Deployment
+# AWS Bastion
 
-```sh
-terraform init
-terraform plan
-terraform apply -auto-approve
-```
+AWS Bastion with multiple SSH Key support.
 
-## Teardown
-
-```sh
-terraform destroy -auto-approve
-```
 ## Usage
 
 ``` sh
 ssh-keygen -t rsa
 ```
-
 
 ``` sh
 module "bastion" {

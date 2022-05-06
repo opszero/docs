@@ -88,17 +88,20 @@ parts:
   - file: databases/mongodb
   - file: databases/elasticsearch
   - file: databases/aws-dynamodb
-# - caption: ETL
-#   chapters:
-#   - file: etl/aws-glue
-# - caption: Data Warehouse
-#   chapters:
-#   - file: databases/redshift
-# - caption: "Data Analysis & BI"
-#   chapters:
-#   - file: bi/looker
-#   - file: bi/tableau
-#   - file: bi/metabase
+- caption: ETL
+  chapters:
+  - url: "https://www.fivetran.com/connectors"
+    title: Fivetran
+  # - file: etl/aws-glue
+- caption: Data Warehouse
+  chapters:
+  - file: databases/redshift
+- caption: "Business Intelligence"
+  chapters:
+  - url: "https://www.looker.com/"
+    title: Looker
+  - url: "https://www.metabase.com/"
+    title: Metabase
 - caption: "Data Science & AI"
   chapters:
   - file: ai/kubernetes
