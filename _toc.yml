@@ -4,9 +4,6 @@
 format: jb-book
 root: intro
 parts:
-- caption: Developers
-  chapters:
-  - file: developers/git
 - caption: Infrastructure as Code
   chapters:
   - file: infra-as-code/template-infra
@@ -105,3 +102,7 @@ parts:
 - caption: "Data Science & AI"
   chapters:
   - file: ai/kubernetes
+- caption: Operators
+  chapters:
+  - file: operators/intro
+  - file: operators/git

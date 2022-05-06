@@ -1,20 +1,17 @@
 <!-- BEGIN_TF_DOCS -->
-# Bastion (AWS)
-
 ## Deployment
 
 ```sh
 terraform init
 terraform plan
-terraform apply
+terraform apply -auto-approve
 ```
 
 ## Teardown
 
 ```sh
-terraform destroy
+terraform destroy -auto-approve
 ```
-
 ## Usage
 
 ``` sh
@@ -55,6 +52,7 @@ module "bastion" {
 
 | Name | Type |
 |------|------|
+| [aws_cloudwatch_metric_alarm.aws_bastion_cpu_threshold](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/cloudwatch_metric_alarm) | resource |
 | [aws_eip.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/eip) | resource |
 | [aws_instance.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance) | resource |
 | [aws_security_group.this](https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/security_group) | resource |
