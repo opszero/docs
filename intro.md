@@ -1,4 +1,1 @@
 # Home
-
-```{tableofcontents}
-```

@@ -1,3 +1,6 @@
+build:
+	jupyter-book build .
+
 release:
 	rm -rf _build/
 	$(MAKE) download
@@ -6,9 +9,6 @@ release:
 
 upload:
 	aws --profile opszero s3 sync --acl public-read --delete ./_build/html s3://docs.opszero.com
-
-build:
-	jupyter-book build .
 
 download:
 	gh api /repos/opszero/template-infra/contents/README.md | jq -r '.content' | base64 -d					> infra-as-code/template-infra.md
@@ -23,6 +23,7 @@ download:
 	gh api /repos/opszero/template-aws-lambda-python/contents/README.md | jq -r '.content' | base64 -d		> serverless/template-aws-lambda-python.md
 	gh api /repos/opszero/template-aws-lambda-go/contents/README.md | jq -r '.content' | base64 -d			> serverless/template-aws-lambda-go.md
 	gh api /repos/opszero/template-aws-lambda-rust/contents/README.md | jq -r '.content' | base64 -d		> serverless/template-aws-lambda-rust.md
+	gh api /repos/opszero/terraform-helm-aws-vault/contents/README.md | jq -r '.content' | base64 -d		> secrets/vault.md
 	gh api /repos/opszero/deploytag/contents/README.md | jq -r '.content' | base64 -d						> cicd/deploytag.md
 	gh api /repos/opszero/terraform-aws-bastion/contents/README.md | jq -r '.content' | base64 -d			> compliance/terraform-aws-bastion.md
 	gh api /repos/opszero/terraform-aws-elb-cloudwatch/contents/README.md | jq -r '.content' | base64 -d	> compliance/terraform-aws-elb-cloudwatch.md
