@@ -111,3 +111,4 @@ parts:
   chapters:
   - file: operators/intro
   - file: operators/git
+  - file: operators/pull-request
