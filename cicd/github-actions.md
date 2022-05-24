@@ -1,5 +1,12 @@
 # Github Actions
 
+For Github Actions we have the following checklist:
+
+ - [ ] OIDC IAM
+ - [ ] Build Docker
+ - [ ] Push to ECR
+ - [ ] Deploy using Helm
+
 ## Kubernetes Deployment with Feature Branches
 
 EKS Deployment

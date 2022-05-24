@@ -17,6 +17,13 @@ module "bastion" {
   ec2_connect_installed = true
 }
 ```
+
+## Connect
+
+ - Use [MrMgr](https://github.com/opszero/terraform-aws-bastion) to setup IAM access to the Bastion
+ - `pip3 install pip3 install ec2instanceconnectcli`
+ - `mssh --profile awsprofile ubuntu@i-1234566`
+
 ## Deployment
 
 ```sh

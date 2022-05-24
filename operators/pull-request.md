@@ -6,12 +6,20 @@ Checklist when reviewing Pull Requests
 
  - [ ] Are the Regions Consistent? Make sure that everything is in the same region. Example, us-west-2 and that regions aren't mixed unless you are deploying to different regions.
 
+
+## Docs
+
+ - [ ] Is the README.md updated?
+
 ## Style
+
+ - [ ] Remove Trailing Whitespace
 
 ### Terraform
 
  - [ ] Files should have underscores. Example, `cloud_file.tf` NOT `cloud-file.tf`
  - [ ] Resources should have underscores. `resource "aws_ec2_instance" "analytics_bastion"`
+ - [ ] Modules should have dashes. `module "analytics-bastion"`
 
 ### Helm
 
@@ -31,8 +39,10 @@ Checklist when reviewing Pull Requests
 
 ### Github Actions
 
- - [ ] Is the Docker Registry Created
- - [ ] Is the name of the image correct?
+ - [ ] AWS
+   - [ ] Is the AWS Account ID Correct?
+   - [ ] Is the Docker Registry Created?
+   - [ ] Is the name of the image correct?
  - [ ] Prefer to move environment variables to globals:
  ```
  jobs:

@@ -56,6 +56,7 @@ parts:
         sections:
           - file: cicd/deploytag
       - file: cicd/gitlab
+  - file: kubernetes/troubleshooting
 - caption: Secrets
   chapters:
   - file: secrets/github-secrets
