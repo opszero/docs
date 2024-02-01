@@ -1,0 +1,85 @@
+# Table of contents
+# Learn more at https://jupyterbook.org/customize/toc.html
+
+format: jb-book
+root: intro
+
+
+
+parts:
+  - caption: DevOps
+    chapters:
+      # - file: iam
+      - file: kubespot
+        sections:
+          - file: terraform-aws-kubespot
+      # - file: cicd
+  # - caption: "AI+DataOps"
+  #   chapters:
+  #     - file: datasets
+  #       sections:
+  #         - file: data-jobs
+#         - [data-commodities](https://yerra.co/ventures/opszero/ai/datasets/data-commodities/)
+#         - [data-crowdfunds](https://yerra.co/ventures/opszero/ai/datasets/data-crowdfunds/)
+#         - [data-duns](https://yerra.co/ventures/opszero/ai/datasets/data-duns/)
+#         - [data-grants](https://yerra.co/ventures/opszero/ai/datasets/data-grants/)
+#         - [data-irs-nonprofits](https://yerra.co/ventures/opszero/ai/datasets/data-irs-nonprofits/)
+#         - [data-jobs](https://yerra.co/ventures/opszero/ai/datasets/data-jobs/)
+#         - [data-peopledatalabs](https://yerra.co/ventures/opszero/ai/datasets/data-peopledatalabs/)
+#         - [data-sec-edgar](https://yerra.co/ventures/opszero/ai/datasets/data-sec-edgar/)
+#         - [data-sec-insider](https://yerra.co/ventures/opszero/ai/datasets/data-sec-insider/)
+#         - [data-stocks](https://yerra.co/ventures/opszero/ai/datasets/data-stocks/)
+#         - [data-usa-websites](https://yerra.co/ventures/opszero/ai/datasets/data-usa-websites/)
+#         - [data-usaspending-gov](https://yerra.co/ventures/opszero/ai/datasets/data-usaspending-gov/)
+  #   chapters:
+  #   - file: usage
+  #   - file: aws
+  #   - file: azure
+  #   - file: cost-security
+  #   - file: google
+#     - Prompt
+#     - Crowd
+  - caption: Cost Optimization
+    chapters:
+#       - file: omyac
+        - file: instance-select
+#       - file: ri
+#       - file: reseller
+#   - caption: "Modernization"
+#     chapters:
+#     - file: nixtune
+#   - caption: "Security & Compliance"
+#     chapters:
+#       - file: compliance
+#         sections:
+#           - file: soc2
+#           - file: hipaa
+#           - file: cmmc
+#           - file: gppr
+#   # - caption: "Distribution"
+#   #   chapters:
+#   #     - file: aws-marketplace
+#   - caption: "Datasets"
+#     chapters:
+#       - file: data-jobs
+#       # - file: datasets
+# #         - [data-commodities](https://yerra.co/ventures/opszero/ai/datasets/data-commodities/)
+# #         - [data-crowdfunds](https://yerra.co/ventures/opszero/ai/datasets/data-crowdfunds/)
+# #         - [data-duns](https://yerra.co/ventures/opszero/ai/datasets/data-duns/)
+# #         - [data-grants](https://yerra.co/ventures/opszero/ai/datasets/data-grants/)
+# #         - [data-irs-nonprofits](https://yerra.co/ventures/opszero/ai/datasets/data-irs-nonprofits/)
+# #         - [data-jobs](https://yerra.co/ventures/opszero/ai/datasets/data-jobs/)
+# #         - [data-peopledatalabs](https://yerra.co/ventures/opszero/ai/datasets/data-peopledatalabs/)
+# #         - [data-sec-edgar](https://yerra.co/ventures/opszero/ai/datasets/data-sec-edgar/)
+# #         - [data-sec-insider](https://yerra.co/ventures/opszero/ai/datasets/data-sec-insider/)
+# #         - [data-stocks](https://yerra.co/ventures/opszero/ai/datasets/data-stocks/)
+# #         - [data-usa-websites](https://yerra.co/ventures/opszero/ai/datasets/data-usa-websites/)
+# #         - [data-usaspending-gov](https://yerra.co/ventures/opszero/ai/datasets/data-usaspending-gov/)
+#   #   chapters:
+#   #   - file: usage
+#   #   - file: aws
+#   #   - file: azure
+#   #   - file: cost-security
+#   #   - file: google
+# #     - Prompt
+# #     - Crowd
