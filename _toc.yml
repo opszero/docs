@@ -1,18 +1,13 @@
-# Table of contents
-# Learn more at https://jupyterbook.org/customize/toc.html
-
 format: jb-book
 root: intro
-
-
 
 parts:
   - caption: DevOps
     chapters:
       # - file: iam
-      - file: kubespot
+      - file: kubespot/intro
         sections:
-          - file: terraform-aws-kubespot
+          - file: kubespot/terraform-aws-kubespot
       # - file: cicd
   # - caption: "AI+DataOps"
   #   chapters:

@@ -1,0 +1,21 @@
+# Book settings
+# Learn more at https://jupyterbook.org/customize/config.html
+
+title: opsZero
+author: opsZero, LLC
+copyright: "2016-2024"
+logo: "https://i0.wp.com/opszero.com/wp-content/uploads/2023/10/opsZero-Logo-Large.png"
+
+# Force re-execution of notebooks on each build.
+# See https://jupyterbook.org/content/execute.html
+execute:
+  execute_notebooks: force
+
+html:
+  use_edit_page_button: true
+  use_repository_button: true
+  use_issues_button: true
+
+repository:
+  url: "https://github.com/opszero/docs"
+  branch: "main"

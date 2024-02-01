@@ -1,0 +1,35 @@
+name: Build & Publish
+
+on:
+    push:
+        tags:
+            - "*"
+
+concurrency:
+    group: ${{ github.workflow }}-${{ github.ref }}
+    cancel-in-progress: true
+
+jobs:
+    build-docs:
+        name: Build & Release Docs
+        runs-on: ubuntu-latest
+        steps:
+            - name: Checkout
+              uses: actions/checkout@v4
+            - uses: actions/setup-python@v5
+              with:
+                  python-version: "3.12"
+                  cache: "pip"
+
+            - name: Build Static Files
+              run: |
+                  cd docs
+                  sudo apt-get update -y && sudo apt-get install graphviz
+                  make build
+
+            - name: Publish Static Files
+              uses: cloudflare/wrangler-action@2.0.0
+              with:
+                  apiToken: ${{ secrets.CF_API_TOKEN }}
+                  accountId: ${{ secrets.CF_ACCOUNT_ID }}
+                  command: pages deploy ./docs/_build/html/ --project-name=opszero-docs --commit-dirty=true
