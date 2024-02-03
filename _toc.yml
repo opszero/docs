@@ -2,18 +2,28 @@ format: jb-book
 root: intro
 
 parts:
-  - caption: DevOps
+  - caption: Cloud Infrastructure
     chapters:
-      # - file: iam
-      - file: kubespot/intro
+      # - file: cloud-intro
+      - file: devops
         sections:
-          - file: kubespot/terraform-aws-kubespot
+          - file: kubespot/intro
+            sections:
+              - file: kubespot/terraform-aws-kubespot
+      - file: cost-optimization
+        sections:
+          - file: instance-select
+#       - file: omyac
+#       - file: ri
+#       - file: reseller
+      #     # - file: iam
       # - file: cicd
   # - caption: "AI+DataOps"
-  #   chapters:
-  #     - file: datasets
-  #       sections:
-  #         - file: data-jobs
+  - caption: "APIs & Data"
+    chapters:
+      - file: datasets
+        sections:
+          - file: data-jobs
 #         - [data-commodities](https://yerra.co/ventures/opszero/ai/datasets/data-commodities/)
 #         - [data-crowdfunds](https://yerra.co/ventures/opszero/ai/datasets/data-crowdfunds/)
 #         - [data-duns](https://yerra.co/ventures/opszero/ai/datasets/data-duns/)
@@ -34,12 +44,7 @@ parts:
   #   - file: google
 #     - Prompt
 #     - Crowd
-  - caption: Cost Optimization
-    chapters:
-#       - file: omyac
-        - file: instance-select
-#       - file: ri
-#       - file: reseller
+
 #   - caption: "Modernization"
 #     chapters:
 #     - file: nixtune
@@ -78,3 +83,5 @@ parts:
 #   #   - file: google
 # #     - Prompt
 # #     - Crowd
+
+  # - caption: "Industries"
