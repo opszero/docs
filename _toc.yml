@@ -19,11 +19,11 @@ parts:
       #     # - file: iam
       # - file: cicd
   # - caption: "AI+DataOps"
-  - caption: "APIs & Data"
-    chapters:
-      - file: datasets
-        sections:
-          - file: data-jobs
+  # - caption: "APIs & Datasets"
+  #   chapters:
+  #     - file: datasets
+  #       sections:
+  #         - file: data-jobs
 #         - [data-commodities](https://yerra.co/ventures/opszero/ai/datasets/data-commodities/)
 #         - [data-crowdfunds](https://yerra.co/ventures/opszero/ai/datasets/data-crowdfunds/)
 #         - [data-duns](https://yerra.co/ventures/opszero/ai/datasets/data-duns/)
@@ -84,4 +84,7 @@ parts:
 # #     - Prompt
 # #     - Crowd
 
-  # - caption: "Industries"
+  # - caption: APIs
+  #   chapters:
+  #     # - file: cloud-intro
+  #     - file: apps/dodleads
