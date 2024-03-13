@@ -84,7 +84,7 @@ parts:
 # #     - Prompt
 # #     - Crowd
 
-  # - caption: APIs
-  #   chapters:
-  #     # - file: cloud-intro
-  #     - file: apps/dodleads
+  - caption: Support
+    chapters:
+      # - file: cloud-intro
+      - file: support
